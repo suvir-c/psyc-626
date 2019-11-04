@@ -10,7 +10,7 @@
 	1. Run dataExtractor.py and wait for the count to reach the same as in previous step
 1. Modify runExample.sh such that it looks into the right input_dir, in this case /extracted
 	1. Update line 37 and 48, from original source code, or update the count from wc -l source.csv
-		1. i.e. it should read ```for day in `seq 0 714`; do
+		1. i.e. it should read ```for day in `seq 0 714`; do ```
 		1. Where 714 is the count returned from wc -l source.csv.
 
 It should work and give you a report 
