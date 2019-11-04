@@ -1,3 +1,19 @@
+#PSYC626 Instructions
+
+1. The cleaned data shows up in the format
+	1. Date, Tweet1, Tweet2, Tweet3, ..... TweetN
+2. In order to convert it to the format required for BurstyBTM
+	1. Run Scripts > dataExtractor.py
+	1. In that ensure that the source is in the same level as dataExtractor.py named "source.csv"
+	1. Create a folder there called "extractor"
+	1. Run wc -l source.csv it should tell you the lines of in the file
+	1. Run dataExtractor.py and wait for the count to reach the same as in previous step
+1. Modify runExample.sh such that it looks into the right input_dir, in this case /extracted
+	1. Update line 37 and 48, from original source code, or update the count from wc -l source.csv
+		1. i.e. it should read for day in `seq 0 714`; do
+		1. Where 714 is the count returned from wc -l source.csv.
+
+
 # Code of Bursty Biterm Topic Model
 
 
