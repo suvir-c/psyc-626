@@ -1,4 +1,4 @@
-#PSYC626 Instructions
+# PSYC626 Instructions
 
 1. The cleaned data shows up in the format
 	1. Date, Tweet1, Tweet2, Tweet3, ..... TweetN
@@ -12,6 +12,8 @@
 	1. Update line 37 and 48, from original source code, or update the count from wc -l source.csv
 		1. i.e. it should read for day in `seq 0 714`; do
 		1. Where 714 is the count returned from wc -l source.csv.
+
+It should work and give you a report 
 
 
 # Code of Bursty Biterm Topic Model
