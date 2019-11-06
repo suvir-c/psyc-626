@@ -7,7 +7,7 @@ K=20   # number of topics
 
 alpha=`echo "scale=3;50/$K"|bc`
 beta=0.01
-n_day=3
+n_day=714
 n_iter=1
 ix_b='n'	# 'n' is not fix, 'y' is fix
 
