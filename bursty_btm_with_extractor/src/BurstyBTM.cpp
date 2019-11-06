@@ -35,12 +35,16 @@ void BurstyBTM::run(string docs_pt, string model_dir) {
  */
 void BurstyBTM::load_docs(string pt) {
   ifstream rf(pt.c_str());
+  cout << ">>>>>pt String<<<<<<:"<< pt << endl;
   if (!rf)
     logError("file not find:" + pt);
 
   string line;
   int n_filter = 0;
+  int linecount =1;
   while (getline(rf, line)) {
+	  cout << ">>>>>linecount<<<<<<:"<< linecount << endl;
+	  linecount++;
     Doc doc(line);
     vector<Biterm> doc_bs = doc.gen_biterms();
 	
