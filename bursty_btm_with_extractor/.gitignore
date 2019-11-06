@@ -4,3 +4,5 @@
 src/bbtm
 src/infer
 .idea/
+output/
+script/extracted
