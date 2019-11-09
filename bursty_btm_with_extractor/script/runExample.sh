@@ -7,14 +7,15 @@ K=20   # number of topics
 
 alpha=`echo "scale=3;50/$K"|bc`
 beta=0.01
-n_day=714
+n_day=715
 n_iter=1
 ix_b='n'	# 'n' is not fix, 'y' is fix
 
 rm -rf ../output/
 mkdir -p ../output/eta ../output/doc_wids ../output/model
 input_dir=../sample-data/
-input_dir=extracted/
+#input_dir=extracted/
+input_dir=../2m_data/
 output_dir=../output/
 dwid_dir=${output_dir}doc_wids/
 bdf_pt=${output_dir}biterm_dayfreq.txt
