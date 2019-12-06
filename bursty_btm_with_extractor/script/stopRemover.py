@@ -6,10 +6,10 @@ from nltk.tokenize import word_tokenize
 stop_words = set(stopwords.words('english')) 
 
 
-directory="small/"
+directory="../2m_data/"
 
 for filename in os.listdir(directory):
-    appendFile = open("smallout/"+filename,'a')
+    appendFile = open("../2m_stopRemoved/"+filename,'a')
     if filename.endswith(".txt"):
         with open(directory+filename) as fp:
             line = fp.readline()
